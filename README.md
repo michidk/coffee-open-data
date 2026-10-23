@@ -1,16 +1,56 @@
 # coffee-open-data
 
-A small, machine-readable catalog for coffee equipment, roasters, and coffees.
+A small, portable reference catalog for coffee equipment, roasters, and coffees.
+The data is plain JSON so it can be used from a script, imported into a database, or bundled into an application without a service dependency.
 
-- `taxonomy/` contains controlled vocabulary lists.
-- `schemas/` contains JSON Schema 2020-12 definitions for each record type.
-- `data/` contains one JSON object per record, grouped by collection.
-- `scripts/validate.ts` checks every data record for valid JSON, required fields, unique kebab-case IDs, taxonomy references, and cross-collection references.
-- Equipment and coffee records can retain property-level source evidence with URLs, source kinds, and retrieval timestamps.
-- Coffee records capture brew range, decaf status, origin, region, farm, variety, process, roast level, and notes.
+## What is here
 
-Run `npm run validate` with Node 22 or newer.
+```text
+coffee-open-data/
+├── taxonomy/                 # shared vocabularies and lookup IDs
+├── schemas/                  # JSON Schema 2020-12 record definitions
+├── data/                     # one JSON record per file, grouped by collection
+└── scripts/validate.ts       # structural and cross-reference checks
+```
 
-The taxonomies keep lookup IDs separate from display names. Each entry also carries a category, and can carry aliases or domain metadata such as a coffee species. This follows the useful split in BrewForm between a stable controlled value and the information used to search, group, and explain it.
+The current taxonomies cover:
 
-The catalogs are intentionally smaller than a commercial equipment database. New records should add a stable ID, a clear name, a category, and a source in the record's evidence when the value comes from research. Keep species, cultivars, processing methods, and market names as separate concepts rather than putting them in one undifferentiated list.
+- Equipment types, including espresso machines, grinders, brewers, kettles, scales, and accessories.
+- Brew methods, including espresso, pour over, batch brew, immersion, pressure, vacuum, and cold brew.
+- Processing methods, including washed, natural, honey, anaerobic, wet hulled, and carbonic maceration.
+- Coffee species and cultivars, including Arabica, Robusta, Bourbon, Typica, Geisha, SL28, SL34, and Pacamara.
+
+Taxonomy entries use stable lowercase kebab-case IDs. Display names, descriptions, categories, and aliases can change without breaking references.
+
+## Record model
+
+Records have a stable `id` and human-readable `name`. Relationships use IDs such as `manufacturerId` and `roasterId`. Measurements name their unit in the property, for example `burrSizeMm`, `capacityMl`, and `brewPressureMaximumBar`.
+
+Coffee records can describe brew range, decaffeination, origin, region, farm, variety, processing, roast level, and tasting notes. Equipment and coffee records can include property-level evidence with a source URL, source kind, raw value or unit, and retrieval time.
+
+The repository does not contain a database, application runtime, or user-owned brew history. It is a source package for those systems.
+
+## Validate locally
+
+Requires Node.js 22 or newer.
+
+```bash
+npm run validate
+```
+
+Validation checks JSON syntax, required fields, unique IDs, taxonomy references, and relationships between collections. Empty collection directories contain `.gitkeep` files until records are added.
+
+## Contributing data
+
+1. Use a stable lowercase kebab-case ID.
+2. Keep one JSON object in one file under the matching `data/` collection.
+3. Use an existing taxonomy ID when one fits. Use `other` only when the original value is retained in notes or evidence.
+4. Keep measurements numeric and include the unit in the property name.
+5. Add source evidence for researched values.
+6. Run `npm run validate` before committing.
+
+When adding a new controlled value, include a description and aliases when they help imports or search. Keep species, cultivars, processing methods, and market names as separate concepts.
+
+## License
+
+The code and schema definitions are available under the [MIT License](LICENSE). Data contributors should include source and licensing information for records they add.
