@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://coffee-open-data.dev/schemas/coffee.schema.json",
+  "title": "Coffee",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "roasterId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "origin": {
+      "type": "string",
+      "minLength": 1
+    },
+    "variety": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1
+    },
+    "processingMethod": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "altitudeM": {
+      "type": "number",
+      "minimum": 0
+    },
+    "roastLevel": {
+      "type": "string"
+    },
+    "tastingNotes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "roasterId",
+    "origin",
+    "variety",
+    "processingMethod"
+  ]
+}

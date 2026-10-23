@@ -1,0 +1,22 @@
+[
+  {
+    "id": "espresso-machine",
+    "name": "Espresso machine"
+  },
+  {
+    "id": "grinder",
+    "name": "Coffee grinder"
+  },
+  {
+    "id": "brewer",
+    "name": "Coffee brewer"
+  },
+  {
+    "id": "scale",
+    "name": "Coffee scale"
+  },
+  {
+    "id": "kettle",
+    "name": "Kettle"
+  }
+]

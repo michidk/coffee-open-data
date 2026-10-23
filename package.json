@@ -1,0 +1,8 @@
+{
+  "name": "coffee-open-data",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.ts"
+  }
+}

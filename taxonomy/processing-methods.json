@@ -1,0 +1,22 @@
+[
+  {
+    "id": "washed",
+    "name": "Washed"
+  },
+  {
+    "id": "natural",
+    "name": "Natural"
+  },
+  {
+    "id": "honey",
+    "name": "Honey"
+  },
+  {
+    "id": "anaerobic",
+    "name": "Anaerobic"
+  },
+  {
+    "id": "wet-hulled",
+    "name": "Wet hulled"
+  }
+]

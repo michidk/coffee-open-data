@@ -1,0 +1,26 @@
+[
+  {
+    "id": "espresso",
+    "name": "Espresso"
+  },
+  {
+    "id": "pour-over",
+    "name": "Pour over"
+  },
+  {
+    "id": "french-press",
+    "name": "French press"
+  },
+  {
+    "id": "aeropress",
+    "name": "AeroPress"
+  },
+  {
+    "id": "cold-brew",
+    "name": "Cold brew"
+  },
+  {
+    "id": "siphon",
+    "name": "Siphon"
+  }
+]

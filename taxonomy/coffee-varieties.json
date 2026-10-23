@@ -1,0 +1,26 @@
+[
+  {
+    "id": "arabica",
+    "name": "Arabica"
+  },
+  {
+    "id": "bourbon",
+    "name": "Bourbon"
+  },
+  {
+    "id": "caturra",
+    "name": "Caturra"
+  },
+  {
+    "id": "geisha",
+    "name": "Geisha"
+  },
+  {
+    "id": "typica",
+    "name": "Typica"
+  },
+  {
+    "id": "pacamara",
+    "name": "Pacamara"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://coffee-open-data.dev/schemas/grinder.schema.json",
+  "title": "Grinder",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manufacturerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "burrType": {
+      "type": "string"
+    },
+    "burrSizeMm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "grindSettings": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "dosingType": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "manufacturerId"
+  ]
+}

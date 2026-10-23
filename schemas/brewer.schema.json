@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://coffee-open-data.dev/schemas/brewer.schema.json",
+  "title": "Brewer",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manufacturerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "brewMethods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1
+    },
+    "capacityMl": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "material": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "manufacturerId",
+    "brewMethods"
+  ]
+}
