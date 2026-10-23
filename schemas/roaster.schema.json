@@ -39,6 +39,59 @@
         "type": "string",
         "minLength": 1
       }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "propertyKey": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sourceKind": {
+            "type": "string",
+            "enum": [
+              "manual",
+              "manufacturer",
+              "specialist",
+              "retailer",
+              "community"
+            ]
+          },
+          "rawValue": {},
+          "rawUnit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "propertyKey",
+          "sourceUrl",
+          "sourceKind",
+          "retrievedAt"
+        ]
+      }
+    },
+    "instagramHandle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location": {
+      "type": "string",
+      "minLength": 1
     }
   },
   "required": [
