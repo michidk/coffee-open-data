@@ -1,22 +1,52 @@
 [
   {
     "id": "espresso-machine",
-    "name": "Espresso machine"
+    "name": "Espresso machine",
+    "description": "A machine that brews espresso under pressure."
   },
   {
-    "id": "grinder",
-    "name": "Coffee grinder"
+    "id": "espresso-machine-with-grinder",
+    "name": "Espresso machine with grinder",
+    "description": "An espresso machine with an integrated coffee grinder."
   },
   {
     "id": "brewer",
-    "name": "Coffee brewer"
+    "name": "Coffee brewer",
+    "description": "A device for brewing filter, immersion, or other non-espresso coffee."
   },
   {
-    "id": "scale",
-    "name": "Coffee scale"
+    "id": "grinder",
+    "name": "Coffee grinder",
+    "description": "A device that grinds whole coffee beans."
   },
   {
     "id": "kettle",
-    "name": "Kettle"
+    "name": "Kettle",
+    "description": "A vessel for heating and pouring brewing water."
+  },
+  {
+    "id": "scale",
+    "name": "Coffee scale",
+    "description": "A scale for measuring coffee, water, or brew flow."
+  },
+  {
+    "id": "tamper",
+    "name": "Espresso tamper",
+    "description": "A tool for compressing coffee in an espresso basket."
+  },
+  {
+    "id": "wdt",
+    "name": "WDT tool",
+    "description": "A needle tool for distributing espresso grounds."
+  },
+  {
+    "id": "basket",
+    "name": "Espresso basket",
+    "description": "A filter basket used in an espresso portafilter."
+  },
+  {
+    "id": "other",
+    "name": "Other equipment",
+    "description": "Coffee equipment that does not fit another type."
   }
 ]

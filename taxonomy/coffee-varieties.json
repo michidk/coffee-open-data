@@ -1,26 +1,104 @@
 [
   {
     "id": "arabica",
-    "name": "Arabica"
+    "name": "Arabica",
+    "description": "Coffea arabica, the species used by most specialty coffee cultivars.",
+    "aliases": [
+      "coffea arabica"
+    ]
+  },
+  {
+    "id": "robusta",
+    "name": "Robusta",
+    "description": "Coffea canephora, a coffee species also known as robusta.",
+    "aliases": [
+      "coffea canephora"
+    ]
+  },
+  {
+    "id": "liberica",
+    "name": "Liberica",
+    "description": "Coffea liberica, a coffee species with large cherries and seeds.",
+    "aliases": [
+      "coffea liberica"
+    ]
   },
   {
     "id": "bourbon",
-    "name": "Bourbon"
-  },
-  {
-    "id": "caturra",
-    "name": "Caturra"
-  },
-  {
-    "id": "geisha",
-    "name": "Geisha"
+    "name": "Bourbon",
+    "description": "A traditional Arabica cultivar descended from Typica."
   },
   {
     "id": "typica",
-    "name": "Typica"
+    "name": "Typica",
+    "description": "A traditional Arabica cultivar with a broad historical lineage."
+  },
+  {
+    "id": "caturra",
+    "name": "Caturra",
+    "description": "A compact mutation of Bourbon selected for shorter plant height."
+  },
+  {
+    "id": "castillo",
+    "name": "Castillo",
+    "description": "A Colombian cultivar bred for disease resistance and yield."
+  },
+  {
+    "id": "colombia",
+    "name": "Colombia",
+    "description": "A Colombian cultivar blend developed for disease resistance."
+  },
+  {
+    "id": "geisha",
+    "name": "Geisha",
+    "description": "A high-aroma Arabica cultivar associated with Panama and Ethiopia.",
+    "aliases": [
+      "gesha"
+    ]
   },
   {
     "id": "pacamara",
-    "name": "Pacamara"
+    "name": "Pacamara",
+    "description": "A large-seeded cultivar created from Pacas and Maragogipe."
+  },
+  {
+    "id": "maragogipe",
+    "name": "Maragogipe",
+    "description": "A large-seeded mutation of Typica."
+  },
+  {
+    "id": "sl28",
+    "name": "SL28",
+    "description": "A Kenyan Arabica selection known for quality in suitable conditions."
+  },
+  {
+    "id": "sl34",
+    "name": "SL34",
+    "description": "A Kenyan Arabica selection associated with high-elevation production."
+  },
+  {
+    "id": "catimor",
+    "name": "Catimor",
+    "description": "A group of Arabica hybrids descended from Caturra and Timor Hybrid."
+  },
+  {
+    "id": "sarchimor",
+    "name": "Sarchimor",
+    "description": "A group of Arabica hybrids descended from Villa Sarchi and Timor Hybrid."
+  },
+  {
+    "id": "pink-bourbon",
+    "name": "Pink Bourbon",
+    "description": "A pink-fruited Bourbon-related selection."
+  },
+  {
+    "id": "eugenioides",
+    "name": "Eugenioides",
+    "description": "Coffea eugenioides, a low-caffeine coffee species and Arabica parent."
+  },
+  {
+    "id": "other",
+    "name": "Other variety",
+    "description": "A documented variety that does not fit another taxonomy entry."
   }
 ]

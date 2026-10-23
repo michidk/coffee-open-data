@@ -1,26 +1,68 @@
 [
   {
     "id": "espresso",
-    "name": "Espresso"
+    "name": "Espresso",
+    "description": "Pressure brewing a compact coffee beverage through a puck of finely ground coffee."
   },
   {
     "id": "pour-over",
-    "name": "Pour over"
+    "name": "Pour over",
+    "description": "Manual percolation in which water passes through a coffee bed and filter.",
+    "aliases": [
+      "filter coffee",
+      "manual brew"
+    ]
+  },
+  {
+    "id": "batch-brew",
+    "name": "Batch brew",
+    "description": "Automatic or scheduled filter brewing in a batch brewer.",
+    "aliases": [
+      "drip coffee"
+    ]
   },
   {
     "id": "french-press",
-    "name": "French press"
+    "name": "French press",
+    "description": "Immersion brewing followed by filtration with a plunger."
   },
   {
     "id": "aeropress",
-    "name": "AeroPress"
+    "name": "AeroPress",
+    "description": "Pressure-assisted immersion brewing in an AeroPress-style brewer."
   },
   {
-    "id": "cold-brew",
-    "name": "Cold brew"
+    "id": "moka-pot",
+    "name": "Moka pot",
+    "description": "Stovetop percolation through coffee using steam pressure."
   },
   {
     "id": "siphon",
-    "name": "Siphon"
+    "name": "Siphon",
+    "description": "Vacuum brewing that moves water between chambers through a coffee bed."
+  },
+  {
+    "id": "cold-brew",
+    "name": "Cold brew",
+    "description": "Long contact brewing with cool or room-temperature water."
+  },
+  {
+    "id": "cezve",
+    "name": "Cezve",
+    "description": "Boiling finely ground coffee in a cezve or similar small pot.",
+    "aliases": [
+      "ibrik",
+      "turkish coffee"
+    ]
+  },
+  {
+    "id": "percolator",
+    "name": "Percolator",
+    "description": "Repeated percolation of heated water through a coffee bed."
+  },
+  {
+    "id": "capsule",
+    "name": "Capsule",
+    "description": "Brewing coffee from a pre-portioned capsule or pod."
   }
 ]

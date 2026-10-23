@@ -1,22 +1,46 @@
 [
   {
     "id": "washed",
-    "name": "Washed"
+    "name": "Washed",
+    "description": "Fruit is removed before drying, usually followed by fermentation and washing."
   },
   {
     "id": "natural",
-    "name": "Natural"
+    "name": "Natural",
+    "description": "Whole coffee cherries are dried before the fruit is removed.",
+    "aliases": [
+      "dry process"
+    ]
   },
   {
     "id": "honey",
-    "name": "Honey"
+    "name": "Honey",
+    "description": "Some or all mucilage remains on the seed while it dries.",
+    "aliases": [
+      "pulped natural"
+    ]
   },
   {
     "id": "anaerobic",
-    "name": "Anaerobic"
+    "name": "Anaerobic",
+    "description": "Coffee is fermented in a low-oxygen or sealed environment."
   },
   {
     "id": "wet-hulled",
-    "name": "Wet hulled"
+    "name": "Wet hulled",
+    "description": "Coffee is hulled at high moisture before final drying.",
+    "aliases": [
+      "giling basah"
+    ]
+  },
+  {
+    "id": "carbonic-maceration",
+    "name": "Carbonic maceration",
+    "description": "Whole cherries ferment in a carbon-dioxide-rich environment."
+  },
+  {
+    "id": "other",
+    "name": "Other processing",
+    "description": "A documented process that does not fit another taxonomy entry."
   }
 ]
