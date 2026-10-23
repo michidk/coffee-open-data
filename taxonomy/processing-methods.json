@@ -2,7 +2,8 @@
   {
     "id": "washed",
     "name": "Washed",
-    "description": "Fruit is removed before drying, usually followed by fermentation and washing."
+    "description": "Fruit is removed before drying, usually followed by fermentation and washing.",
+    "category": "washed"
   },
   {
     "id": "natural",
@@ -10,7 +11,8 @@
     "description": "Whole coffee cherries are dried before the fruit is removed.",
     "aliases": [
       "dry process"
-    ]
+    ],
+    "category": "dry"
   },
   {
     "id": "honey",
@@ -18,12 +20,14 @@
     "description": "Some or all mucilage remains on the seed while it dries.",
     "aliases": [
       "pulped natural"
-    ]
+    ],
+    "category": "hybrid"
   },
   {
     "id": "anaerobic",
     "name": "Anaerobic",
-    "description": "Coffee is fermented in a low-oxygen or sealed environment."
+    "description": "Coffee is fermented in a low-oxygen or sealed environment.",
+    "category": "fermentation"
   },
   {
     "id": "wet-hulled",
@@ -31,16 +35,19 @@
     "description": "Coffee is hulled at high moisture before final drying.",
     "aliases": [
       "giling basah"
-    ]
+    ],
+    "category": "wet"
   },
   {
     "id": "carbonic-maceration",
     "name": "Carbonic maceration",
-    "description": "Whole cherries ferment in a carbon-dioxide-rich environment."
+    "description": "Whole cherries ferment in a carbon-dioxide-rich environment.",
+    "category": "fermentation"
   },
   {
     "id": "other",
     "name": "Other processing",
-    "description": "A documented process that does not fit another taxonomy entry."
+    "description": "A documented process that does not fit another taxonomy entry.",
+    "category": "other"
   }
 ]

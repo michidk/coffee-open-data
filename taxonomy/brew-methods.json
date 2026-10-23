@@ -2,7 +2,8 @@
   {
     "id": "espresso",
     "name": "Espresso",
-    "description": "Pressure brewing a compact coffee beverage through a puck of finely ground coffee."
+    "description": "Pressure brewing a compact coffee beverage through a puck of finely ground coffee.",
+    "category": "espresso"
   },
   {
     "id": "pour-over",
@@ -11,7 +12,8 @@
     "aliases": [
       "filter coffee",
       "manual brew"
-    ]
+    ],
+    "category": "filter"
   },
   {
     "id": "batch-brew",
@@ -19,32 +21,38 @@
     "description": "Automatic or scheduled filter brewing in a batch brewer.",
     "aliases": [
       "drip coffee"
-    ]
+    ],
+    "category": "filter"
   },
   {
     "id": "french-press",
     "name": "French press",
-    "description": "Immersion brewing followed by filtration with a plunger."
+    "description": "Immersion brewing followed by filtration with a plunger.",
+    "category": "immersion"
   },
   {
     "id": "aeropress",
     "name": "AeroPress",
-    "description": "Pressure-assisted immersion brewing in an AeroPress-style brewer."
+    "description": "Pressure-assisted immersion brewing in an AeroPress-style brewer.",
+    "category": "pressure"
   },
   {
     "id": "moka-pot",
     "name": "Moka pot",
-    "description": "Stovetop percolation through coffee using steam pressure."
+    "description": "Stovetop percolation through coffee using steam pressure.",
+    "category": "pressure"
   },
   {
     "id": "siphon",
     "name": "Siphon",
-    "description": "Vacuum brewing that moves water between chambers through a coffee bed."
+    "description": "Vacuum brewing that moves water between chambers through a coffee bed.",
+    "category": "vacuum"
   },
   {
     "id": "cold-brew",
     "name": "Cold brew",
-    "description": "Long contact brewing with cool or room-temperature water."
+    "description": "Long contact brewing with cool or room-temperature water.",
+    "category": "cold"
   },
   {
     "id": "cezve",
@@ -53,16 +61,19 @@
     "aliases": [
       "ibrik",
       "turkish coffee"
-    ]
+    ],
+    "category": "traditional"
   },
   {
     "id": "percolator",
     "name": "Percolator",
-    "description": "Repeated percolation of heated water through a coffee bed."
+    "description": "Repeated percolation of heated water through a coffee bed.",
+    "category": "percolation"
   },
   {
     "id": "capsule",
     "name": "Capsule",
-    "description": "Brewing coffee from a pre-portioned capsule or pod."
+    "description": "Brewing coffee from a pre-portioned capsule or pod.",
+    "category": "espresso"
   }
 ]

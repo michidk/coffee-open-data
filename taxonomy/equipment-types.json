@@ -2,51 +2,61 @@
   {
     "id": "espresso-machine",
     "name": "Espresso machine",
-    "description": "A machine that brews espresso under pressure."
+    "description": "A machine that brews espresso under pressure.",
+    "category": "espresso"
   },
   {
     "id": "espresso-machine-with-grinder",
     "name": "Espresso machine with grinder",
-    "description": "An espresso machine with an integrated coffee grinder."
+    "description": "An espresso machine with an integrated coffee grinder.",
+    "category": "espresso"
   },
   {
     "id": "brewer",
     "name": "Coffee brewer",
-    "description": "A device for brewing filter, immersion, or other non-espresso coffee."
+    "description": "A device for brewing filter, immersion, or other non-espresso coffee.",
+    "category": "brewing"
   },
   {
     "id": "grinder",
     "name": "Coffee grinder",
-    "description": "A device that grinds whole coffee beans."
+    "description": "A device that grinds whole coffee beans.",
+    "category": "grinding"
   },
   {
     "id": "kettle",
     "name": "Kettle",
-    "description": "A vessel for heating and pouring brewing water."
+    "description": "A vessel for heating and pouring brewing water.",
+    "category": "water"
   },
   {
     "id": "scale",
     "name": "Coffee scale",
-    "description": "A scale for measuring coffee, water, or brew flow."
+    "description": "A scale for measuring coffee, water, or brew flow.",
+    "category": "measurement"
   },
   {
     "id": "tamper",
     "name": "Espresso tamper",
-    "description": "A tool for compressing coffee in an espresso basket."
+    "description": "A tool for compressing coffee in an espresso basket.",
+    "category": "accessory"
   },
   {
     "id": "wdt",
     "name": "WDT tool",
-    "description": "A needle tool for distributing espresso grounds."
+    "description": "A needle tool for distributing espresso grounds.",
+    "category": "accessory"
   },
   {
     "id": "basket",
     "name": "Espresso basket",
-    "description": "A filter basket used in an espresso portafilter."
+    "description": "A filter basket used in an espresso portafilter.",
+    "category": "accessory"
   },
   {
     "id": "other",
     "name": "Other equipment",
-    "description": "Coffee equipment that does not fit another type."
+    "description": "Coffee equipment that does not fit another type.",
+    "category": "other"
   }
 ]
