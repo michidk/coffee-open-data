@@ -16,7 +16,7 @@ const isId = (value: unknown): value is string => typeof value === "string" && /
 
 const errors: string[] = [];
 const taxonomyIds = new Map<string, Set<string>>();
-for (const file of (await readdir(new URL("./taxonomy/", root))).filter((name) => name.endsWith(".json"))) {
+for (const file of (await readdir(new URL("./taxonomy/", root))).filter((name) => name.endsWith(".json") && name !== "brew-method-equipment.json")) {
   try {
     const entries = JSON.parse(await readFile(new URL(`./taxonomy/${file}`, root), "utf8")) as unknown;
     if (!Array.isArray(entries)) throw new Error("taxonomy must be an array");
@@ -24,6 +24,9 @@ for (const file of (await readdir(new URL("./taxonomy/", root))).filter((name) =
     for (const entry of entries) {
       if (!isObject(entry) || !isId(entry.id) || typeof entry.name !== "string" || !entry.name.trim() || ids.has(entry.id)) errors.push(`taxonomy/${file}: invalid or duplicate entry`);
       if (isObject(entry) && typeof entry.id === "string") ids.add(entry.id);
+    }
+    for (const entry of entries) {
+      if (isObject(entry) && typeof entry.parentId === "string" && !ids.has(entry.parentId)) errors.push(`taxonomy/${file}: unknown parentId ${entry.parentId}`);
     }
     taxonomyIds.set(file, ids);
   } catch (error) { errors.push(`taxonomy/${file}: invalid JSON (${String(error)})`); }
@@ -55,5 +58,16 @@ for (const [collection, required] of Object.entries(requiredByCollection)) {
 }
 for (const file of (await readdir(new URL("./data/coffees/", root))).filter((name) => name.endsWith(".json"))) { const path = `data/coffees/${file}`; const v = JSON.parse(await readFile(new URL(`./${path}`, root), "utf8")) as unknown; if (isObject(v) && typeof v.roasterId === "string" && !collections.get("roasters")?.has(v.roasterId)) errors.push(`${path}: unknown roasterId ${v.roasterId}`); }
 for (const collection of ["grinders", "espresso-machines", "brewers"]) for (const file of (await readdir(new URL(`./data/${collection}/`, root))).filter((name) => name.endsWith(".json"))) { const path = `data/${collection}/${file}`; const v = JSON.parse(await readFile(new URL(`./${path}`, root), "utf8")) as unknown; if (isObject(v) && typeof v.manufacturerId === "string" && !collections.get("manufacturers")?.has(v.manufacturerId)) errors.push(`${path}: unknown manufacturerId ${v.manufacturerId}`); }
+const brewMethodIds = taxonomyIds.get("brew-methods.json") ?? new Set<string>();
+const equipmentTypeIds = taxonomyIds.get("equipment-types.json") ?? new Set<string>();
+try {
+  const relations = JSON.parse(await readFile(new URL("./taxonomy/brew-method-equipment.json", root), "utf8")) as unknown;
+  if (!Array.isArray(relations)) throw new Error("compatibility data must be an array");
+  for (const relation of relations) {
+    if (!isObject(relation) || typeof relation.brewMethodId !== "string" || !brewMethodIds.has(relation.brewMethodId)) errors.push("taxonomy/brew-method-equipment.json: unknown brew method");
+    if (!isObject(relation) || typeof relation.equipmentTypeId !== "string" || !equipmentTypeIds.has(relation.equipmentTypeId)) errors.push("taxonomy/brew-method-equipment.json: unknown equipment type");
+    if (!isObject(relation) || !["compatible", "required", "optional", "incompatible"].includes(String(relation.relationship))) errors.push("taxonomy/brew-method-equipment.json: invalid relationship");
+  }
+} catch (error) { errors.push(`taxonomy/brew-method-equipment.json: invalid JSON (${String(error)})`); }
 if (errors.length) { console.error(errors.join("\n")); process.exit(1); }
 console.log("coffee-open-data: validation passed");

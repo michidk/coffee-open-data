@@ -1,0 +1,17 @@
+[
+  {
+    "id": "single-dose",
+    "name": "Single Dose",
+    "description": "Single dose feeding."
+  },
+  {
+    "id": "hopper",
+    "name": "Hopper",
+    "description": "Hopper feeding."
+  },
+  {
+    "id": "both",
+    "name": "Both",
+    "description": "Supports single-dose and hopper feeding."
+  }
+]

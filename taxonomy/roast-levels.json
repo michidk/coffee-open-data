@@ -1,0 +1,32 @@
+[
+  {
+    "id": "light",
+    "name": "Light",
+    "description": "Lightly developed roast with a brighter acidity and more origin character."
+  },
+  {
+    "id": "medium-light",
+    "name": "Medium light",
+    "description": "Balanced development with clear origin character."
+  },
+  {
+    "id": "medium",
+    "name": "Medium",
+    "description": "Balanced roast development with moderate acidity and body."
+  },
+  {
+    "id": "medium-dark",
+    "name": "Medium dark",
+    "description": "Deeper roast development with more body and less acidity."
+  },
+  {
+    "id": "dark",
+    "name": "Dark",
+    "description": "Deep roast development with pronounced roast character."
+  },
+  {
+    "id": "other",
+    "name": "Other roast level",
+    "description": "A documented roast level outside this vocabulary."
+  }
+]

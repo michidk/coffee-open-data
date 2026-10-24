@@ -1,0 +1,149 @@
+[
+  {
+    "id": "fruity",
+    "name": "Fruity",
+    "parentId": null,
+    "description": "Aromatic impressions associated with fruit.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "floral",
+    "name": "Floral",
+    "parentId": null,
+    "description": "Aromatic impressions associated with flowers.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "sweet",
+    "name": "Sweet",
+    "parentId": null,
+    "description": "Sweet aromatic impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "nutty-cocoa",
+    "name": "Nutty and cocoa",
+    "parentId": null,
+    "description": "Nut, cocoa, and chocolate impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "spices",
+    "name": "Spices",
+    "parentId": null,
+    "description": "Spice impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "sour-fermented",
+    "name": "Sour and fermented",
+    "parentId": null,
+    "description": "Sour, fermented, and alcohol-like impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "green-vegetative",
+    "name": "Green and vegetative",
+    "parentId": null,
+    "description": "Green, vegetal, and herb-like impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "parentId": null,
+    "description": "A documented flavor outside this starter vocabulary.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "berry",
+    "name": "Berry",
+    "parentId": "fruity",
+    "description": "Berry-like fruit.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "citrus",
+    "name": "Citrus fruit",
+    "parentId": "fruity",
+    "description": "Citrus-like fruit.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "stone-fruit",
+    "name": "Stone fruit",
+    "parentId": "fruity",
+    "description": "Stone-fruit impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "tropical-fruit",
+    "name": "Tropical fruit",
+    "parentId": "fruity",
+    "description": "Tropical fruit impressions.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "parentId": "floral",
+    "description": "Jasmine-like floral aroma.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "rose",
+    "name": "Rose",
+    "parentId": "floral",
+    "description": "Rose-like floral aroma.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "chocolate",
+    "name": "Chocolate",
+    "parentId": "nutty-cocoa",
+    "description": "Chocolate-like aroma or flavor.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "caramel",
+    "name": "Caramel",
+    "parentId": "sweet",
+    "description": "Caramelized sugar impression.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla",
+    "parentId": "sweet",
+    "description": "Vanilla-like aroma.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "cinnamon",
+    "name": "Cinnamon",
+    "parentId": "spices",
+    "description": "Cinnamon-like spice.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "clove",
+    "name": "Clove",
+    "parentId": "spices",
+    "description": "Clove-like spice.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "winey",
+    "name": "Winey",
+    "parentId": "sour-fermented",
+    "description": "Wine-like fermented character.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  },
+  {
+    "id": "tobacco",
+    "name": "Tobacco",
+    "parentId": "other",
+    "description": "Tobacco-like aroma or flavor.",
+    "source": "coffee-open-data project-authored starter vocabulary"
+  }
+]

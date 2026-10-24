@@ -58,5 +58,71 @@
     "name": "Other equipment",
     "description": "Coffee equipment that does not fit another type.",
     "category": "other"
+  },
+  {
+    "id": "pour-over-brewer",
+    "name": "Pour-over brewer",
+    "description": "A brewer designed for percolation through a paper or mesh filter.",
+    "category": "brewing"
+  },
+  {
+    "id": "immersion-brewer",
+    "name": "Immersion brewer",
+    "description": "A brewer that steeps coffee before filtration.",
+    "category": "brewing"
+  },
+  {
+    "id": "pressure-brewer",
+    "name": "Pressure brewer",
+    "description": "A brewer that uses pressure without an espresso machine.",
+    "category": "brewing"
+  },
+  {
+    "id": "roaster",
+    "name": "Coffee roaster",
+    "description": "Equipment used to roast green coffee.",
+    "category": "roasting"
+  },
+  {
+    "id": "portafilter",
+    "name": "Portafilter",
+    "description": "A handle and basket carrier for an espresso machine.",
+    "category": "accessory"
+  },
+  {
+    "id": "puck-screen",
+    "name": "Puck screen",
+    "description": "A screen placed on top of an espresso puck.",
+    "category": "accessory"
+  },
+  {
+    "id": "paper-filter",
+    "name": "Paper filter",
+    "description": "A disposable paper filter for coffee brewing.",
+    "category": "accessory"
+  },
+  {
+    "id": "mesh-filter",
+    "name": "Mesh filter",
+    "description": "A reusable mesh filter for coffee brewing.",
+    "category": "accessory"
+  },
+  {
+    "id": "milk-tool",
+    "name": "Milk tool",
+    "description": "A tool for steaming, texturing, or frothing milk.",
+    "category": "accessory"
+  },
+  {
+    "id": "thermometer",
+    "name": "Thermometer",
+    "description": "A tool for measuring coffee or water temperature.",
+    "category": "measurement"
+  },
+  {
+    "id": "cezve",
+    "name": "Cezve",
+    "description": "A small pot used for cezve or Turkish-style coffee.",
+    "category": "brewing"
   }
 ]

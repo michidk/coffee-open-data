@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fixed",
+    "name": "Fixed",
+    "description": "A fixed grind size."
+  },
+  {
+    "id": "stepped",
+    "name": "Stepped",
+    "description": "Discrete indexed grind settings."
+  },
+  {
+    "id": "stepless",
+    "name": "Stepless",
+    "description": "Continuous or near-continuous adjustment."
+  }
+]

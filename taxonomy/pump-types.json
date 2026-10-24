@@ -1,0 +1,32 @@
+[
+  {
+    "id": "vibration",
+    "name": "Vibration",
+    "description": "Vibration pump."
+  },
+  {
+    "id": "rotary",
+    "name": "Rotary",
+    "description": "Rotary vane pump."
+  },
+  {
+    "id": "gear",
+    "name": "Gear",
+    "description": "Gear pump."
+  },
+  {
+    "id": "peristaltic",
+    "name": "Peristaltic",
+    "description": "Peristaltic pump."
+  },
+  {
+    "id": "manual",
+    "name": "Manual",
+    "description": "Manual pressure generation."
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "description": "Another pump type."
+  }
+]

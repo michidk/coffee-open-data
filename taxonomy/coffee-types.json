@@ -1,0 +1,22 @@
+[
+  {
+    "id": "espresso",
+    "name": "Espresso",
+    "description": "Coffee selected or marketed for espresso brewing."
+  },
+  {
+    "id": "filter",
+    "name": "Filter",
+    "description": "Coffee selected or marketed for filter brewing."
+  },
+  {
+    "id": "omni",
+    "name": "Omni",
+    "description": "Coffee intended to work across multiple brew methods."
+  },
+  {
+    "id": "other",
+    "name": "Other coffee type",
+    "description": "A documented brew range outside this vocabulary."
+  }
+]

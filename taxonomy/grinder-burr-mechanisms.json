@@ -1,0 +1,32 @@
+[
+  {
+    "id": "conical",
+    "name": "Conical",
+    "description": "Conical burrs."
+  },
+  {
+    "id": "flat",
+    "name": "Flat",
+    "description": "Flat burrs."
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "description": "Ghost-style burrs."
+  },
+  {
+    "id": "roller",
+    "name": "Roller",
+    "description": "Roller burrs."
+  },
+  {
+    "id": "blade",
+    "name": "Blade",
+    "description": "Blade grinding mechanism."
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "description": "Other burr or grinding mechanism."
+  }
+]

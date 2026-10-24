@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee-open-data.dev/schemas/brew-method-equipment.schema.json",
+  "title": "Brew method equipment compatibility",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "brewMethodId": {
+      "type": "string",
+      "enum": [
+        "espresso",
+        "pour-over",
+        "batch-brew",
+        "french-press",
+        "aeropress",
+        "moka-pot",
+        "siphon",
+        "cold-brew",
+        "cezve",
+        "percolator",
+        "capsule",
+        "v60",
+        "chemex",
+        "kalita-wave",
+        "drip-coffee"
+      ],
+      "x-taxonomy": "brew-methods"
+    },
+    "equipmentTypeId": {
+      "type": "string",
+      "enum": [
+        "espresso-machine",
+        "espresso-machine-with-grinder",
+        "brewer",
+        "grinder",
+        "kettle",
+        "scale",
+        "tamper",
+        "wdt",
+        "basket",
+        "other",
+        "pour-over-brewer",
+        "immersion-brewer",
+        "pressure-brewer",
+        "roaster",
+        "portafilter",
+        "puck-screen",
+        "paper-filter",
+        "mesh-filter",
+        "milk-tool",
+        "thermometer",
+        "cezve"
+      ],
+      "x-taxonomy": "equipment-types"
+    },
+    "relationship": {
+      "type": "string",
+      "enum": [
+        "compatible"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "brewMethodId",
+    "equipmentTypeId",
+    "relationship"
+  ]
+}

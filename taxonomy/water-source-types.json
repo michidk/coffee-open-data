@@ -1,0 +1,12 @@
+[
+  {
+    "id": "reservoir",
+    "name": "Reservoir",
+    "description": "Removable or built-in water reservoir."
+  },
+  {
+    "id": "plumbed",
+    "name": "Plumbed",
+    "description": "Direct connection to a water supply."
+  }
+]

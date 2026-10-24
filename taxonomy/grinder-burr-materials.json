@@ -1,0 +1,17 @@
+[
+  {
+    "id": "steel",
+    "name": "Steel",
+    "description": "Steel burrs."
+  },
+  {
+    "id": "ceramic",
+    "name": "Ceramic",
+    "description": "Ceramic burrs."
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "description": "Another burr material."
+  }
+]

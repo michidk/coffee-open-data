@@ -36,20 +36,57 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        "enum": [
+          "arabica",
+          "robusta",
+          "liberica",
+          "bourbon",
+          "typica",
+          "caturra",
+          "castillo",
+          "colombia",
+          "geisha",
+          "pacamara",
+          "maragogipe",
+          "sl28",
+          "sl34",
+          "catimor",
+          "sarchimor",
+          "pink-bourbon",
+          "eugenioides",
+          "other"
+        ],
+        "x-taxonomy": "coffee-varieties"
       },
-      "minItems": 1
+      "minItems": 1,
+      "uniqueItems": true
     },
     "processingMethod": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "enum": [
+        "washed",
+        "natural",
+        "honey",
+        "wet-hulled",
+        "other"
+      ],
+      "x-taxonomy": "processing-methods"
     },
     "altitudeM": {
       "type": "number",
       "minimum": 0
     },
     "roastLevel": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "light",
+        "medium-light",
+        "medium",
+        "medium-dark",
+        "dark",
+        "other"
+      ],
+      "x-taxonomy": "roast-levels"
     },
     "tastingNotes": {
       "type": "array",
@@ -73,7 +110,8 @@
           },
           "sourceUrl": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "^https?://"
           },
           "sourceKind": {
             "type": "string",
@@ -82,8 +120,11 @@
               "manufacturer",
               "specialist",
               "retailer",
-              "community"
-            ]
+              "community",
+              "academic",
+              "standard"
+            ],
+            "x-taxonomy": "source-types"
           },
           "rawValue": {},
           "rawUnit": {
@@ -108,8 +149,10 @@
       "enum": [
         "espresso",
         "filter",
-        "omni"
-      ]
+        "omni",
+        "other"
+      ],
+      "x-taxonomy": "coffee-types"
     },
     "isDecaf": {
       "type": "boolean"
@@ -121,6 +164,51 @@
     "farm": {
       "type": "string",
       "minLength": 1
+    },
+    "fermentationMethod": {
+      "type": "string",
+      "enum": [
+        "unspecified",
+        "aerobic",
+        "anaerobic",
+        "carbonic-maceration",
+        "lactic",
+        "yeast-inoculated",
+        "other"
+      ],
+      "x-taxonomy": "fermentation-methods"
+    },
+    "flavorNoteIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "fruity",
+          "floral",
+          "sweet",
+          "nutty-cocoa",
+          "spices",
+          "sour-fermented",
+          "green-vegetative",
+          "other",
+          "berry",
+          "citrus",
+          "stone-fruit",
+          "tropical-fruit",
+          "jasmine",
+          "rose",
+          "chocolate",
+          "caramel",
+          "vanilla",
+          "cinnamon",
+          "clove",
+          "winey",
+          "tobacco"
+        ],
+        "x-taxonomy": "flavor-wheel"
+      },
+      "minItems": 1,
+      "uniqueItems": true
     }
   },
   "required": [

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "none",
+    "name": "None",
+    "description": "No user control."
+  },
+  {
+    "id": "fixed",
+    "name": "Fixed",
+    "description": "Fixed factory behavior."
+  },
+  {
+    "id": "manual",
+    "name": "Manual",
+    "description": "Direct manual control."
+  },
+  {
+    "id": "adjustable",
+    "name": "Adjustable",
+    "description": "Adjustable by the user."
+  },
+  {
+    "id": "programmable",
+    "name": "Programmable",
+    "description": "Programmable control."
+  }
+]

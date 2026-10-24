@@ -29,14 +29,35 @@
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "boilerType": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "single-boiler",
+        "heat-exchanger",
+        "dual-boiler",
+        "multi-boiler",
+        "single-thermoblock",
+        "dual-thermoblock",
+        "hybrid",
+        "manual",
+        "other"
+      ],
+      "x-taxonomy": "espresso-machine-heating-types"
     },
     "boilerCount": {
       "type": "integer",
       "minimum": 1
     },
     "pumpType": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "vibration",
+        "rotary",
+        "gear",
+        "peristaltic",
+        "manual",
+        "other"
+      ],
+      "x-taxonomy": "pump-types"
     },
     "groupCount": {
       "type": "integer",
@@ -57,7 +78,8 @@
           },
           "sourceUrl": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "^https?://"
           },
           "sourceKind": {
             "type": "string",
@@ -66,8 +88,11 @@
               "manufacturer",
               "specialist",
               "retailer",
-              "community"
-            ]
+              "community",
+              "academic",
+              "standard"
+            ],
+            "x-taxonomy": "source-types"
           },
           "rawValue": {},
           "rawUnit": {
@@ -94,11 +119,95 @@
     "manualUrl": {
       "type": "string",
       "format": "uri"
+    },
+    "waterSourceTypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "reservoir",
+          "plumbed"
+        ],
+        "x-taxonomy": "water-source-types"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "equipmentTypeId": {
+      "allOf": [
+        {
+          "type": "string",
+          "enum": [
+            "espresso-machine",
+            "espresso-machine-with-grinder",
+            "brewer",
+            "grinder",
+            "kettle",
+            "scale",
+            "tamper",
+            "wdt",
+            "basket",
+            "other",
+            "pour-over-brewer",
+            "immersion-brewer",
+            "pressure-brewer",
+            "roaster",
+            "portafilter",
+            "puck-screen",
+            "paper-filter",
+            "mesh-filter",
+            "milk-tool",
+            "thermometer",
+            "cezve"
+          ],
+          "x-taxonomy": "equipment-types"
+        },
+        {
+          "enum": [
+            "espresso-machine",
+            "espresso-machine-with-grinder"
+          ]
+        }
+      ]
+    },
+    "temperatureControl": {
+      "type": "string",
+      "enum": [
+        "none",
+        "fixed",
+        "manual",
+        "adjustable",
+        "programmable"
+      ],
+      "x-taxonomy": "control-modes"
+    },
+    "pressureControl": {
+      "type": "string",
+      "enum": [
+        "none",
+        "fixed",
+        "manual",
+        "adjustable",
+        "programmable"
+      ],
+      "x-taxonomy": "control-modes"
+    },
+    "flowControl": {
+      "type": "string",
+      "enum": [
+        "none",
+        "fixed",
+        "manual",
+        "adjustable",
+        "programmable"
+      ],
+      "x-taxonomy": "control-modes"
     }
   },
   "required": [
     "id",
     "name",
-    "manufacturerId"
+    "manufacturerId",
+    "equipmentTypeId"
   ]
 }

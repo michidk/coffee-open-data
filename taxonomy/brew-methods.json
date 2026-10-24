@@ -75,5 +75,43 @@
     "name": "Capsule",
     "description": "Brewing coffee from a pre-portioned capsule or pod.",
     "category": "espresso"
+  },
+  {
+    "id": "v60",
+    "name": "V60",
+    "description": "Cone-shaped pour-over brewing associated with the Hario V60.",
+    "aliases": [
+      "hario-v60"
+    ],
+    "category": "filter"
+  },
+  {
+    "id": "chemex",
+    "name": "Chemex",
+    "description": "Pour-over brewing with a Chemex brewer and bonded paper filter.",
+    "aliases": [],
+    "category": "filter"
+  },
+  {
+    "id": "kalita-wave",
+    "name": "Kalita Wave",
+    "description": "Flat-bottom pour-over brewing with a Kalita Wave-style brewer.",
+    "aliases": [],
+    "category": "filter"
+  },
+  {
+    "id": "drip-coffee",
+    "name": "Drip coffee",
+    "description": "Automatic or manual filter brewing through a flat or cone filter.",
+    "aliases": [
+      "filter coffee"
+    ],
+    "category": "filter"
+  },
+  {
+    "id": "other",
+    "name": "Other brew method",
+    "description": "A documented brew method outside this vocabulary.",
+    "category": "other"
   }
 ]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "single-boiler",
+    "name": "Single Boiler",
+    "description": "One boiler shared by brewing and steaming."
+  },
+  {
+    "id": "heat-exchanger",
+    "name": "Heat Exchanger",
+    "description": "A heat exchanger inside a steam boiler."
+  },
+  {
+    "id": "dual-boiler",
+    "name": "Dual Boiler",
+    "description": "Separate brew and steam boilers."
+  },
+  {
+    "id": "multi-boiler",
+    "name": "Multi Boiler",
+    "description": "Separate boilers for multiple heating zones."
+  },
+  {
+    "id": "single-thermoblock",
+    "name": "Single Thermoblock",
+    "description": "One thermoblock heating system."
+  },
+  {
+    "id": "dual-thermoblock",
+    "name": "Dual Thermoblock",
+    "description": "Separate thermoblocks for brewing and steaming."
+  },
+  {
+    "id": "hybrid",
+    "name": "Hybrid",
+    "description": "A hybrid boiler and thermoblock system."
+  },
+  {
+    "id": "manual",
+    "name": "Manual",
+    "description": "Manual or non-standard heating system."
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "description": "Another heating architecture."
+  }
+]

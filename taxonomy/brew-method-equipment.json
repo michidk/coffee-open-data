@@ -1,0 +1,287 @@
+[
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "espresso-machine",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "espresso-machine-with-grinder",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "grinder",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "tamper",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "basket",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "espresso",
+    "equipmentTypeId": "portafilter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "pour-over",
+    "equipmentTypeId": "pour-over-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "pour-over",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "pour-over",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "pour-over",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "pour-over",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "v60",
+    "equipmentTypeId": "pour-over-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "v60",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "v60",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "v60",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "chemex",
+    "equipmentTypeId": "pour-over-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "chemex",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "chemex",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "chemex",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "kalita-wave",
+    "equipmentTypeId": "pour-over-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "kalita-wave",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "kalita-wave",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "kalita-wave",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "batch-brew",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "batch-brew",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "batch-brew",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "drip-coffee",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "drip-coffee",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "drip-coffee",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "french-press",
+    "equipmentTypeId": "immersion-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "french-press",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "french-press",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "french-press",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "french-press",
+    "equipmentTypeId": "mesh-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "aeropress",
+    "equipmentTypeId": "pressure-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "aeropress",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "aeropress",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "aeropress",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "aeropress",
+    "equipmentTypeId": "paper-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "moka-pot",
+    "equipmentTypeId": "pressure-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "moka-pot",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "moka-pot",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "moka-pot",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "siphon",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "siphon",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "siphon",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cold-brew",
+    "equipmentTypeId": "immersion-brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cold-brew",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cold-brew",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cold-brew",
+    "equipmentTypeId": "mesh-filter",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cezve",
+    "equipmentTypeId": "cezve",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cezve",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "cezve",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "percolator",
+    "equipmentTypeId": "brewer",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "percolator",
+    "equipmentTypeId": "kettle",
+    "relationship": "compatible"
+  },
+  {
+    "brewMethodId": "percolator",
+    "equipmentTypeId": "scale",
+    "relationship": "compatible"
+  }
+]

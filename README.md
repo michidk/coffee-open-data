@@ -9,6 +9,7 @@ The data is plain JSON so it can be used from a script, imported into a database
 coffee-open-data/
 ├── taxonomy/                 # shared vocabularies and lookup IDs
 ├── schemas/                  # JSON Schema 2020-12 record definitions
+│   └── taxonomy-entry.schema.json
 ├── data/                     # one JSON record per file, grouped by collection
 └── scripts/validate.ts       # structural and cross-reference checks
 ```
@@ -19,6 +20,8 @@ The current taxonomies cover:
 - Brew methods, including espresso, pour over, batch brew, immersion, pressure, vacuum, and cold brew.
 - Processing methods, including washed, natural, honey, anaerobic, wet hulled, and carbonic maceration.
 - Coffee species and cultivars, including Arabica, Robusta, Bourbon, Typica, Geisha, SL28, SL34, and Pacamara.
+- Roast levels, coffee types, fermentation methods, grinder properties, espresso-machine properties, pump types, water sources, and evidence source types.
+- A starter flavor vocabulary with parent categories and a separate brew-method/equipment compatibility relation.
 
 Taxonomy entries use stable lowercase kebab-case IDs. Display names, descriptions, categories, and aliases can change without breaking references.
 
@@ -26,7 +29,7 @@ Taxonomy entries use stable lowercase kebab-case IDs. Display names, description
 
 Records have a stable `id` and human-readable `name`. Relationships use IDs such as `manufacturerId` and `roasterId`. Measurements name their unit in the property, for example `burrSizeMm`, `capacityMl`, and `brewPressureMaximumBar`.
 
-Coffee records can describe brew range, decaffeination, origin, region, farm, variety, processing, roast level, and tasting notes. Equipment and coffee records can include property-level evidence with a source URL, source kind, raw value or unit, and retrieval time.
+Coffee records can describe brew range, decaffeination, origin, region, farm, variety, processing, fermentation, roast level, and tasting notes. Flavor notes use IDs from `taxonomy/flavor-wheel.json`; the starter vocabulary is project-authored and does not copy the full SCA wheel. Equipment and coffee records can include property-level evidence with a source URL, source kind, raw value or unit, and retrieval time.
 
 The repository does not contain a database, application runtime, or user-owned brew history. It is a source package for those systems.
 
@@ -49,7 +52,7 @@ Validation checks JSON syntax, required fields, unique IDs, taxonomy references,
 5. Add source evidence for researched values.
 6. Run `npm run validate` before committing.
 
-When adding a new controlled value, include a description and aliases when they help imports or search. Keep species, cultivars, processing methods, and market names as separate concepts.
+When adding a new controlled value, include a description and aliases when they help imports or search. Keep species, cultivars, processing methods, fermentation methods, flavor notes, and market names as separate concepts. Add compatibility relationships to `taxonomy/brew-method-equipment.json` instead of embedding equipment assumptions in brew-method names.
 
 ## License
 

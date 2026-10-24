@@ -55,7 +55,8 @@
           },
           "sourceUrl": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "^https?://"
           },
           "sourceKind": {
             "type": "string",
@@ -64,8 +65,11 @@
               "manufacturer",
               "specialist",
               "retailer",
-              "community"
-            ]
+              "community",
+              "academic",
+              "standard"
+            ],
+            "x-taxonomy": "source-types"
           },
           "rawValue": {},
           "rawUnit": {

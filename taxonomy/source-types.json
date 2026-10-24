@@ -1,0 +1,37 @@
+[
+  {
+    "id": "manual",
+    "name": "Manual entry",
+    "description": "A value entered from direct observation or contributor knowledge."
+  },
+  {
+    "id": "manufacturer",
+    "name": "Manufacturer",
+    "description": "A manufacturer product page, datasheet, or manual."
+  },
+  {
+    "id": "specialist",
+    "name": "Specialist publication",
+    "description": "A specialist coffee publication or technical reference."
+  },
+  {
+    "id": "retailer",
+    "name": "Retailer",
+    "description": "A retailer product listing."
+  },
+  {
+    "id": "community",
+    "name": "Community source",
+    "description": "A community-maintained or user-submitted source."
+  },
+  {
+    "id": "academic",
+    "name": "Academic source",
+    "description": "A scholarly paper or institutional publication."
+  },
+  {
+    "id": "standard",
+    "name": "Industry standard",
+    "description": "A standards body or recognized industry reference."
+  }
+]

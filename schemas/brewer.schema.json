@@ -32,9 +32,27 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        "enum": [
+          "espresso",
+          "pour-over",
+          "batch-brew",
+          "french-press",
+          "aeropress",
+          "moka-pot",
+          "siphon",
+          "cold-brew",
+          "cezve",
+          "percolator",
+          "capsule",
+          "v60",
+          "chemex",
+          "kalita-wave",
+          "drip-coffee"
+        ],
+        "x-taxonomy": "brew-methods"
       },
-      "minItems": 1
+      "minItems": 1,
+      "uniqueItems": true
     },
     "capacityMl": {
       "type": "number",
@@ -58,7 +76,8 @@
           },
           "sourceUrl": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "^https?://"
           },
           "sourceKind": {
             "type": "string",
@@ -67,8 +86,11 @@
               "manufacturer",
               "specialist",
               "retailer",
-              "community"
-            ]
+              "community",
+              "academic",
+              "standard"
+            ],
+            "x-taxonomy": "source-types"
           },
           "rawValue": {},
           "rawUnit": {
@@ -95,12 +117,53 @@
     "manualUrl": {
       "type": "string",
       "format": "uri"
+    },
+    "equipmentTypeId": {
+      "allOf": [
+        {
+          "type": "string",
+          "enum": [
+            "espresso-machine",
+            "espresso-machine-with-grinder",
+            "brewer",
+            "grinder",
+            "kettle",
+            "scale",
+            "tamper",
+            "wdt",
+            "basket",
+            "other",
+            "pour-over-brewer",
+            "immersion-brewer",
+            "pressure-brewer",
+            "roaster",
+            "portafilter",
+            "puck-screen",
+            "paper-filter",
+            "mesh-filter",
+            "milk-tool",
+            "thermometer",
+            "cezve"
+          ],
+          "x-taxonomy": "equipment-types"
+        },
+        {
+          "enum": [
+            "brewer",
+            "pour-over-brewer",
+            "immersion-brewer",
+            "pressure-brewer",
+            "cezve"
+          ]
+        }
+      ]
     }
   },
   "required": [
     "id",
     "name",
     "manufacturerId",
-    "brewMethods"
+    "brewMethods",
+    "equipmentTypeId"
   ]
 }

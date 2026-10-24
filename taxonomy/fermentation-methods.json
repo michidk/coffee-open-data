@@ -1,0 +1,37 @@
+[
+  {
+    "id": "unspecified",
+    "name": "Unspecified",
+    "description": "The fermentation method is not documented."
+  },
+  {
+    "id": "aerobic",
+    "name": "Aerobic",
+    "description": "Fermentation with normal exposure to oxygen."
+  },
+  {
+    "id": "anaerobic",
+    "name": "Anaerobic",
+    "description": "Fermentation in a low-oxygen or sealed environment."
+  },
+  {
+    "id": "carbonic-maceration",
+    "name": "Carbonic maceration",
+    "description": "Fermentation in a carbon-dioxide-rich environment."
+  },
+  {
+    "id": "lactic",
+    "name": "Lactic",
+    "description": "Fermentation favoring lactic-acid-producing microorganisms."
+  },
+  {
+    "id": "yeast-inoculated",
+    "name": "Yeast inoculated",
+    "description": "Fermentation with a documented yeast culture added."
+  },
+  {
+    "id": "other",
+    "name": "Other fermentation",
+    "description": "A documented fermentation method outside this vocabulary."
+  }
+]

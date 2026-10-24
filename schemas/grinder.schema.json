@@ -29,7 +29,16 @@
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "burrType": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "conical",
+        "flat",
+        "ghost",
+        "roller",
+        "blade",
+        "other"
+      ],
+      "x-taxonomy": "grinder-burr-mechanisms"
     },
     "burrSizeMm": {
       "type": "number",
@@ -40,7 +49,13 @@
       "minimum": 1
     },
     "dosingType": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "single-dose",
+        "hopper",
+        "both"
+      ],
+      "x-taxonomy": "grinder-bean-feed-types"
     },
     "notes": {
       "type": "string"
@@ -57,7 +72,8 @@
           },
           "sourceUrl": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "^https?://"
           },
           "sourceKind": {
             "type": "string",
@@ -66,8 +82,11 @@
               "manufacturer",
               "specialist",
               "retailer",
-              "community"
-            ]
+              "community",
+              "academic",
+              "standard"
+            ],
+            "x-taxonomy": "source-types"
           },
           "rawValue": {},
           "rawUnit": {
@@ -94,11 +113,66 @@
     "manualUrl": {
       "type": "string",
       "format": "uri"
+    },
+    "adjustmentType": {
+      "type": "string",
+      "enum": [
+        "fixed",
+        "stepped",
+        "stepless"
+      ],
+      "x-taxonomy": "grinder-adjustment-types"
+    },
+    "burrMaterial": {
+      "type": "string",
+      "enum": [
+        "steel",
+        "ceramic",
+        "other"
+      ],
+      "x-taxonomy": "grinder-burr-materials"
+    },
+    "equipmentTypeId": {
+      "allOf": [
+        {
+          "type": "string",
+          "enum": [
+            "espresso-machine",
+            "espresso-machine-with-grinder",
+            "brewer",
+            "grinder",
+            "kettle",
+            "scale",
+            "tamper",
+            "wdt",
+            "basket",
+            "other",
+            "pour-over-brewer",
+            "immersion-brewer",
+            "pressure-brewer",
+            "roaster",
+            "portafilter",
+            "puck-screen",
+            "paper-filter",
+            "mesh-filter",
+            "milk-tool",
+            "thermometer",
+            "cezve"
+          ],
+          "x-taxonomy": "equipment-types"
+        },
+        {
+          "enum": [
+            "grinder"
+          ]
+        }
+      ]
     }
   },
   "required": [
     "id",
     "name",
-    "manufacturerId"
+    "manufacturerId",
+    "equipmentTypeId"
   ]
 }
