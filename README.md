@@ -44,7 +44,7 @@ The schemas use controlled values where a field affects interoperability. For ex
 
 ## Validate locally
 
-Requires Node.js 22 or newer.
+Requires Node.js 22.18 or newer, which runs the TypeScript validator directly.
 
 ```bash
 npm run validate
